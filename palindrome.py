@@ -20,10 +20,10 @@ def is_palindrome(name):
     """compares the parameter string and its reverse to see if it's palindrome"""
     print ("is_palindrome was called")
     #name[begin:end:step] is outputting the string 'name' in reverse. 
-    if strip_input(name) == strip_input(name[::-1]):
-        return print("This was a palindrome!")
+    if strip_input(name) == strip_input(name[::-1]):    
+        return print("is a palindrome!")
     else:
-        return print("This was NOT a palindrome!")
+        return print("is not a palindrome!")
 
 while True:
     name = input("Enter a word or sentence and see if it's palindrome [type 'quit' to end]: ")
