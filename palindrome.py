@@ -1,5 +1,5 @@
 
-name = input("Enter a word and see if it's palindrome: ")
+
 
 def strip_input(name):
     import re
@@ -23,4 +23,12 @@ def is_palindrome(name):
     else:
         return print("This was NOT a palindrome!")
 
-is_palindrome(name)
+while True:
+    name = input("Enter a word or sentence and see if it's palindrome [type 'quit' to end]: ")
+    if name == 'quit':
+        break
+    if name == "":
+        print ("You didn't enter anything, let's start over!")
+        continue    
+    is_palindrome(name)
+
